@@ -20,5 +20,3 @@ app.use(adminRouter);
 
 const port = 3000;
 app.listen(port);
-
-// this is just a comment to check if github works weellll
