@@ -1,5 +1,3 @@
-const path = require("path");
-
 const express = require("express");
 
 const blogController = require("../controllers/blogController");
@@ -12,4 +10,6 @@ router.get("/blog", blogController.getBlogPage);
 router.get("/home", blogController.getHome);
 router.get("/", blogController.getHome);
 
+router.post("/sub_thk", blogController.postThankPage);
+router.post("/thnkpage", blogController.postSaveMail);
 module.exports = router;

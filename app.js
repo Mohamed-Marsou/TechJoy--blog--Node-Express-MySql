@@ -11,12 +11,12 @@ app.set("views", "views");
 app.use(bodyParser.urlencoded({ extended: false }));
 // *serving static files
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "images")));
 
 const blogRouter = require("./router/blog_usr");
 const adminRouter = require("./router/admin");
 
 app.use(blogRouter);
 app.use(adminRouter);
-
 const port = 3000;
 app.listen(port);
