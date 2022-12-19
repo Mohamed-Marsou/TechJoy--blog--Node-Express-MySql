@@ -1,5 +1,3 @@
 # TechJoy--blog- Home 
+- just run : npm start after you make sure to download node-modules(npm install) and you good to work on the project
 
-- Fetched 3 lateset articles from database
-- added logic for sending emails in home page
-- saving subs emails in our DB
