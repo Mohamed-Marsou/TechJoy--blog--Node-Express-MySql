@@ -36,3 +36,8 @@ const dropMenu = document.querySelector(".dropdown_menu");
 myAccBtn.addEventListener("click", () => {
   dropMenu.classList.toggle("dropdown_Active");
 });
+
+const articleDate = document.querySelectorAll(".Art_date");
+articleDate.forEach((art) => {
+  art.innerHTML = art.innerHTML.slice(0, 15);
+});
